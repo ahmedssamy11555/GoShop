@@ -1,0 +1,29 @@
+.products {
+  margin: 100px 150px;
+  .top {
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  h1 {
+    text-transform: capitalize;
+  }
+  p {
+    flex: 5;
+    color: gray;
+  }
+  .bottom {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.products .bottom .link {
+  min-width: 300px;
+}
+
+@media (max-width: 767px) {
+  .products {
+    margin: 100px 37px;
+  }
+}
